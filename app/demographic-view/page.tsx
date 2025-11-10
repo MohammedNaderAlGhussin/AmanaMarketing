@@ -31,7 +31,7 @@ const processDemographicData = (campaigns: Campaign[]) => {
     // Clicks/Impressions/Conversions first, and skip the Spend/Revenue aggregation for the cards, 
     // but we will prepare the age/gender table based on the available performance data.
 
-    // Let's create an aggregate map for Age/Gender groups
+    // Let's create an aggregate map for Age/Gender groups 
     const aggregateMap: { 
       [key: string]: { 
         impressions: number, 

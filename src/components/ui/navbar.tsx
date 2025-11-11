@@ -118,7 +118,7 @@ export function Navbar({ className = "" }: NavbarProps) {
       {/* Mobile hamburger button */}
       <button
         onClick={toggleSidebar}
-        className="fixed top-6 left-6 z-50 p-3 rounded-lg bg-gray-800 shadow-md border border-gray-700 lg:hidden hover:bg-gray-700 transition-all duration-200 cursor-pointer"
+        className="fixed top-6 left-6 z-30 p-3 rounded-lg bg-gray-800 shadow-md border border-gray-700 lg:hidden hover:bg-gray-700 transition-all duration-200 cursor-pointer"
         aria-label="Toggle sidebar"
       >
         {isOpen ? (

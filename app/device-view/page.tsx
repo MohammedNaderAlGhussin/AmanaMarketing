@@ -125,7 +125,7 @@ export default function DeviceView() {
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out overflow-hidden">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-8 sm:py-12">
+        <section className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-8 sm:py-12 border-b-1 border-[#6b7280]">
           <div className="px-4 sm:px-6 lg:px-8">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center">
               Device Performance Analysis

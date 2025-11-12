@@ -249,7 +249,7 @@ export default function DeviceView() {
             </div>
           )}
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

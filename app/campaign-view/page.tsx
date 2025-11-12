@@ -402,7 +402,7 @@ export default function CampaignView() {
           )}
         </div>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

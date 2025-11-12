@@ -277,7 +277,7 @@ export default function WeeklyView() {
           )}
         </div>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

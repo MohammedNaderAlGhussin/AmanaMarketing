@@ -470,7 +470,7 @@ export default function DemographicView() {
             )}
           </div>
 
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
     </>

@@ -319,7 +319,7 @@ export default function RegionView() {
           )}
         </div>
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

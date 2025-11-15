@@ -281,17 +281,53 @@ export default function DemographicView() {
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out overflow-hidden">
           {/* Hero Section */}
-          <section className="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-8 sm:py-12 border-b-1 border-[#6b7280]">
-            <div className="px-4 sm:px-6 lg:px-8">
+          <section className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-10 md:py-14 overflow-hidden">
+            {/* Animated Background Pattern */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 -left-4 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
+              <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
+              <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
+            </div>
+
+            <div className="relative px-6 lg:px-8 max-w-5xl mx-auto">
               <div className="text-center">
                 {error ? (
-                  <div className="bg-red-900 border border-red-700 text-red-200 px-3 sm:px-4 py-3 rounded mb-4 max-w-2xl mx-auto text-sm sm:text-base">
-                    Error loading data: {error}
+                  <div className="bg-red-500/20 backdrop-blur-sm border border-red-400/50 text-white px-6 py-3 rounded-xl mb-4 max-w-2xl mx-auto shadow-xl">
+                    <div className="flex items-center justify-center gap-2">
+                      <svg
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="font-medium">Error: {error}</span>
+                    </div>
+                  </div>
+                ) : loading ? (
+                  <div className="animate-pulse space-y-4">
+                    <div className="h-12 bg-white/20 rounded-lg mb-4 max-w-md mx-auto"></div>
                   </div>
                 ) : (
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
-                    Demographic Performance
-                  </h1>
+                  <div className="space-y-4 animate-fade-in">
+                    <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-2">
+                      <Users className="w-4 h-4" />
+                      Demographic Analytics
+                    </div>
+
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                      Demographic Performance
+                    </h1>
+
+                    <p className="text-sm md:text-base lg:text-lg max-w-3xl mx-auto leading-relaxed opacity-95 bg-black/20 backdrop-blur-sm px-6 py-3 rounded-xl">
+                      Analyze campaign performance across age groups and gender
+                      demographics
+                    </p>
+                  </div>
                 )}
               </div>
             </div>

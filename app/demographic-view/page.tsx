@@ -279,7 +279,7 @@ export default function DemographicView() {
         <Navbar />
 
         {/* Main Content Area */}
-        <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out overflow-hidden">
+        <div className="flex-1 overflow-y-auto">
           {/* Hero Section */}
           <section className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-10 md:py-14 overflow-hidden">
             {/* Animated Background Pattern */}

@@ -262,7 +262,7 @@ export default function DemographicView() {
     return (
       <div className="flex h-screen bg-gray-900">
         <Navbar />
-        <div className="flex-1 overflow-y-auto">
+        <div className="flex-1 flex justify-center items-center">
           <div className="text-white">Loading...</div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-# Amana Marketing Dashboard
+# Marketing Dashboard
 
 A comprehensive marketing analytics dashboard built with Next.js that provides real-time insights into marketing campaign performance, demographics, regional data, and weekly trends.
 
